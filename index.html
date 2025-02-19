@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags for SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop the latest trends in fashion, electronics, and home decor at My E-Commerce Store. Free shipping on orders over $50!">
+    <meta name="keywords" content="e-commerce, online shopping, fashion, electronics, home decor">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <!-- Open Graph and Twitter Card Meta Tags for Social Media -->
+    <meta property="og:title" content="My E-Commerce Store - Shop Online">
+    <meta property="og:description" content="Shop the latest trends in fashion, electronics, and home decor at My E-Commerce Store.">
+    <meta property="og:image" content="https://www.example.com/images/logo.png">
+    <meta property="og:url" content="https://www.example.com">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://www.example.com">
+
+    <!-- Title Tag -->
+    <title>My E-Commerce Store - Shop Online for Fashion, Electronics & Home Decor</title>
+
+    <!-- External CSS for Styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body itemscope itemtype="http://schema.org/WebPage">
+
+    <!-- Header Section -->
+    <header>
+        <h1 itemprop="name">My E-Commerce Store</h1>
+        <nav>
+            <ul>
+                <li><a href="/" title="Home">Home</a></li>
+                <li><a href="/products" title="Products">Products</a></li>
+                <li><a href="/about" title="About Us">About Us</a></li>
+                <li><a href="/contact" title="Contact Us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Hero Section -->
+        <section>
+            <h2>Welcome to My E-Commerce Store</h2>
+            <p>Shop the latest trends in fashion, electronics, and home decor. Enjoy free shipping on orders over $50!</p>
+            <a href="/products" title="Shop Now">Shop Now</a>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section>
+            <h2>Featured Products</h2>
+            <div>
+                <!-- Product 1 -->
+                <article itemscope itemtype="http://schema.org/Product">
+                    <img src="tshirt.avif" alt="Men's Casual Shirt" itemprop="image">
+                    <h3 itemprop="name">Men's Casual Shirt</h3>
+                    <p itemprop="description">A stylish and comfortable shirt for everyday wear.</p>
+                    <p itemprop="price">$29.99</p>
+                    <a href="/product/mens-casual-shirt" title="View Product">View Product</a>
+                </article>
+
+                <!-- Product 2 -->
+                <article itemscope itemtype="http://schema.org/Product">
+                    <img src="headphone.jpeg" alt="Wireless Bluetooth Headphones" itemprop="image">
+                    <h3 itemprop="name">Wireless Bluetooth Headphones</h3>
+                    <p itemprop="description">High-quality sound with noise cancellation feature.</p>
+                    <p itemprop="price">$59.99</p>
+                    <a href="/product/wireless-bluetooth-headphones" title="View Product">View Product</a>
+                </article>
+
+                <!-- Product 3 -->
+                <article itemscope itemtype="http://schema.org/Product">
+                    <img src="table.webp" alt="Modern Coffee Table" itemprop="image">
+                    <h3 itemprop="name">Modern Coffee Table</h3>
+                    <p itemprop="description">A sleek and modern coffee table for your living room.</p>
+                    <p itemprop="price">$99.99</p>
+                    <a href="/product/modern-coffee-table" title="View Product">View Product</a>
+                </article>
+
+                 <!-- Product 4 -->
+                 <article itemscope itemtype="http://schema.org/Product">
+                    <img src="women.jpg" alt="Modern Coffee Table" itemprop="image">
+                    <h3 itemprop="name">Women casual dress</h3>
+                    <p itemprop="description">A stylish and comfortable dress for everyday wear.</p>
+                    <p itemprop="price">$29.99</p>
+                    <a href="/product/modern-coffee-table" title="View Product">View Product</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Call-to-Action Section -->
+        <section>
+            <h2>Sign Up for Exclusive Deals</h2>
+            <p>Subscribe to our newsletter and get 10% off your first order!</p>
+            <form action="/subscribe" method="post">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 My E-Commerce Store. All rights reserved.</p>
+        <ul>
+            <li><a href="/privacy-policy" title="Privacy Policy">Privacy Policy</a></li>
+            <li><a href="/terms-of-service" title="Terms of Service">Terms of Service</a></li>
+        </ul>
+    </footer>
+
+    <!-- External JavaScript for Functionality -->
+    <script src="scripts.js"></script>
+</body>
+</html>
