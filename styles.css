@@ -15,10 +15,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 header h1 {
     margin: 0;
+    font-size: 1.8rem;
 }
 
 nav ul {
@@ -26,6 +28,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -41,12 +44,14 @@ nav ul li a {
 /* Hero Section */
 section:first-of-type {
     text-align: center;
-    padding: 50px;
+    padding: 50px 20px;
     background-color: #ffffff;
 }
 
 section:first-of-type h2 {
     color: #004080;
+    font-size: 2rem;
+    margin-bottom: 15px;
 }
 
 section:first-of-type a {
@@ -61,9 +66,14 @@ section:first-of-type a {
 
 /* Product Section */
 section:nth-of-type(2) {
-    padding: 50px;
+    padding: 50px 20px;
     background-color: white;
     text-align: center;
+}
+
+section:nth-of-type(2) h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 section:nth-of-type(2) div {
@@ -79,6 +89,7 @@ article {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 250px;
+    text-align: center;
 }
 
 article img {
@@ -88,6 +99,13 @@ article img {
 
 article h3 {
     color: #004080;
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+article p {
+    font-size: 1rem;
+    margin: 10px 0;
 }
 
 article a {
@@ -103,8 +121,13 @@ article a {
 /* Call-to-Action Section */
 section:nth-of-type(3) {
     text-align: center;
-    padding: 50px;
+    padding: 50px 20px;
     background-color: #e0e0e0;
+}
+
+section:nth-of-type(3) h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
 }
 
 section:nth-of-type(3) form {
@@ -116,6 +139,7 @@ input[type="email"] {
     width: 250px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 button {
@@ -142,6 +166,7 @@ footer ul {
     margin: 10px 0 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 footer ul li {
@@ -151,4 +176,78 @@ footer ul li {
 footer ul li a {
     color: white;
     text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    section:first-of-type h2 {
+        font-size: 1.8rem;
+    }
+
+    section:nth-of-type(2) h2 {
+        font-size: 1.8rem;
+    }
+
+    section:nth-of-type(3) h2 {
+        font-size: 1.8rem;
+    }
+
+    article {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    input[type="email"] {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li {
+        margin: 5px;
+    }
+
+    section:first-of-type h2 {
+        font-size: 1.5rem;
+    }
+
+    section:nth-of-type(2) h2 {
+        font-size: 1.5rem;
+    }
+
+    section:nth-of-type(3) h2 {
+        font-size: 1.5rem;
+    }
+
+    article {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    input[type="email"] {
+        width: 100%;
+        max-width: 250px;
+    }
 }
